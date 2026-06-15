@@ -15,17 +15,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body, #root { height: 100%; width: 100%; }
+      html {
+        height: -webkit-fill-available;
+      }
       body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        width: 100%;
         background: #0D0D0D;
         color: #F5F5F0;
         font-family: 'Inter', sans-serif;
         overscroll-behavior: none;
         -webkit-tap-highlight-color: transparent;
       }
-      #root { display: flex; flex-direction: column; }
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        width: 100%;
+      }
     </style>
-    <script type="module" crossorigin src="/charlycompta/assets/index-P9nvmxRJ.js"></script>
+    <script type="module" crossorigin src="/charlycompta/assets/index-8LFnDoa-.js"></script>
   <link rel="manifest" href="/charlycompta/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/charlycompta/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
